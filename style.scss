@@ -1,0 +1,169 @@
+/* Define Variables */
+$primary-color: #38a6ac;
+$secondary-color: #007bff;
+$light-gray: #f8f9fa;
+$dark-gray: #343a40;
+$white: #fff;
+$black: #000;
+$modal-gradient-start: #94edf7;
+$modal-gradient-end: #ffffff;
+
+/* Jumbotron */
+.jumbotron {
+  position: relative;
+  background-image: url('Images/image_1.avif');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Place container above pseudo-element */
+  }
+
+  .h1jumbotron {
+    color: $black; /* Text color */
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: $primary-color !important; /* Change the background color */
+  
+  .navbar-brand {
+    color: $white !important; /* Change the text color */
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $white !important; /* Change the text color */
+      &:hover {
+        color: $secondary-color; /* Text color on hover */
+      }
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-color: $white !important; /* Change the color of the toggle icon */
+  }
+
+  .navbar-toggler {
+    border-color: $white !important; /* Change the border color of the toggle button */
+  }
+}
+
+/* Button */
+.btn-primary {
+  font-size: 24px; /* Increase font size */
+  padding: 15px 30px; /* Increase padding */
+  background-color: $primary-color !important; /* Set button background color */
+  border-color: $primary-color !important; /* Set button border color */
+  color: $white !important; /* Set button text color */
+
+  &:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+  }
+}
+
+/* Container */
+.container {
+  .nav-link {
+    color: $primary-color; /* Text color for the links */
+
+    &:hover {
+      color: $secondary-color; /* Text color on hover */
+    }
+
+    &.btn {
+      background-color: $primary-color; /* Button background color */
+      border-color: $primary-color; /* Button border color */
+      color: $white; /* Button text color */
+
+      &:hover {
+        background-color: $secondary-color; /* Button background color on hover */
+        border-color: $secondary-color; /* Button border color on hover */
+        color: $white; /* Button text color on hover */
+      }
+    }
+  }
+}
+
+/* Modal */
+.modal-content {
+  background: linear-gradient(to right, $modal-gradient-start, $modal-gradient-end); /* Gradient colors */
+}
+
+/* About section */
+.about-section {
+  background-color: $light-gray; /* Light gray background */
+  padding: 3rem 0; /* Add padding */
+
+  h3 {
+    color: $secondary-color; /* Blue heading color */
+  }
+
+  p {
+    color: #555; /* Text color */
+  }
+}
+
+/* Speakers section */
+.speakers-section {
+  background-color: $secondary-color; /* Blue background color */
+  color: $white; /* White text color */
+  padding: 3rem 0; /* Add padding */
+
+  h1 {
+    font-size: 3rem; /* Increase font size */
+  }
+}
+
+/* Schedule section */
+.schedule-section {
+  background-color: $dark-gray; /* Dark gray background color */
+  color: $white; /* White text color */
+  padding: 3rem 0; /* Add padding */
+
+  h1 {
+    font-size: 3rem; /* Increase font size */
+  }
+}
+
+/* Form */
+.form-container {
+  background-color: $white; /* White background color */
+  border-radius: 10px; /* Add border-radius */
+  box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Add shadow */
+  padding: 3rem; /* Add padding */
+
+  label {
+    font-weight: bold; /* Make labels bold */
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #222; /* Dark background color */
+  color: $white; /* White text color */
+  padding: 3rem 0; /* Add padding */
+
+  p {
+    font-size: 1.2rem; /* Increase font size */
+  }
+
+  a {
+    color: $secondary-color; /* Blue link color */
+
+    &:hover {
+      color: $white; /* Hover color */
+    }
+  }
+}
